@@ -1,0 +1,42 @@
+---
+about:
+  template: jolla
+  id: about-block
+  image: "img/Andrew_headshot.jpg"
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/andrew-morris-a42408142/
+    - icon: envelope
+      text: Email
+      href: "mailto:andrew.morris@case.edu"  
+---
+
+::: {#about-block}
+:::
+
+# Hello! My name is Andrew Morris. Welcome to my website.
+
+## Current Role
+
+I am the Assistant Director of the [Master of Public Health (MPH) program](https://case.edu/medicine/pqhs/education/public-health/master-public-health) at Case Western Reserve University. Our program is housed in the School of Medicine, Department of Population & Quantitative Health Sciences. In this position I guide students through community-based research and practice experiences, serve as a liaison for community partners and alumni, and am actively involved with academic program management, curriculum development, program accreditation, and student support.
+
+I teach several courses at CWRU, including *Public Health Practicum*, *Public Health Capstone*, and lead a weekly Community Health Research & Practice (CHRP) seminar. Outside the MPH program, I teach a large undergraduate *Public Health 101* course in the department and I teach *Introduction to Public Health* in the Physician Assistant program.
+
+I am actively involved with national public health and academic organizations, including the American Public Health Association (APHA), the Association of Schools & Programs of Public Health (ASPPH), Ohio Public Health Association (OPHA), and the Association for Prevention Teaching & Research (APTR).
+
+## Background
+
+I have an undergraduate background in biology and psychology. I studied at Ohio University in Athens, Ohio (my favorite place in the world). It was at while an undergraduate that I discovered an interest in public health through community and campus involvement. I developed a particular interest in housing and the built environment as a determinant of health through my involvement with the OU chapter of Habitat for Humanity. Upon graduation I completed a summer-long bicycle trip from Portland, Maine to Santa Barbara, California for the affordable housing cause. Our team raised thousands of dollars for local Habitat affiliates and other affordable housing organizations and stopped to build with local affordable housing efforts on 12 occasions.
+
+In 2012, I moved to Greater Cleveland to begin studying public health at Case Western Reserve. While an MPH student at CWRU, I worked as an AmeriCorps member with the [Ohio Association of Community Health Centers](https://www.ohiochc.org/). I was based at [Neighborhood Family Practice](https://www.nfpmedcenter.org/), a federally qualified health center on Cleveland's west side, where I served as a patient advocate. Upon the conclusion of my AmeriCorps service and graduation from the MPH program, I remained at Neighborhood Family Practice where I served as the interim coordinator of the refugee screening program, and later as the manager of a school-based health program. I transitioned to CWRU in 2017 and now serve as the program's Assistant Director.
+
+## Public Health Interests
+
+Refugee health, vaccines, health center operations, environmental health, health policy, and education
+
+## Contact Me
+
+On this website, you will find a bit about my work at CWRU and beyond.
+
+Please feel free to [contact me](mailto:andrew.morris@case.edu) if you have any questions or would like to collaborate.
