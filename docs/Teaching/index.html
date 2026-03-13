@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../img/spartan.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-083d1a00a1bfdb87473960437a1a5e30.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1efb1dd425b571a189304838ee4da2f7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,7 +79,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/spartan.jpg" alt="" class="navbar-logo">
+    <img src="../img/spartan.png" alt="" class="navbar-logo light-content">
+    <img src="../img/spartan.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Andrew Morris, MPH</span>
@@ -105,6 +107,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../cv/index.html"> 
 <span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Blog/index.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -173,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Traditional Courses</h1>
 <section id="mphp-101-introduction-to-public-health-spring" class="level2">
 <h2 class="anchored" data-anchor-id="mphp-101-introduction-to-public-health-spring">MPHP 101: Introduction to Public Health (Spring)</h2>
-<p>MPHP 101 is a large, undergraduate course required for the minor in public health in the Department of Population &amp; Quantiative Health Sciences. The purpose of this course is to introduce students to the science and art of public health through understanding historical and current issues through public health case histories and controversies. Students are introduced to social, behavioral, cultural, and environmental influences on population health. Emphasis is placed on social justice as a central component of public health, with an overview of health inequity and commitment to vulnerable populations. Core public health practices relating to health promotion program design, community assessment and improvement planning, health communication, health policy and enforcement, and health behavior change are featured. The course promotes understanding of health care and public health systems domestically and globally, including preparedness for and response to public health emergencies.</p>
+<p>MPHP 101 is a large, undergraduate course required for the minor in public health in the Department of Population &amp; Quantitative Health Sciences. The purpose of this course is to introduce students to the science and art of public health through understanding historical and current issues through public health case histories and controversies. Students are introduced to social, behavioral, cultural, and environmental influences on population health. Emphasis is placed on social justice as a central component of public health, with an overview of health inequity and commitment to vulnerable populations. Core public health practices relating to health promotion program design, community assessment and improvement planning, health communication, health policy and enforcement, and health behavior change are featured. The course promotes understanding of health care and public health systems domestically and globally, including preparedness for and response to public health emergencies.</p>
 </section>
 <section id="past-451-introduction-to-public-health-summer" class="level2">
 <h2 class="anchored" data-anchor-id="past-451-introduction-to-public-health-summer">PAST 451 Introduction to Public Health (Summer)</h2>
@@ -243,13 +249,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
